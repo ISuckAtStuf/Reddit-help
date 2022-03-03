@@ -1,0 +1,16 @@
+amount = float(input("How much is your car worth?:\n"))
+deppercent = 15
+years = 10
+         
+amount_left = amount
+           
+annual_depreciation = 0
+          
+print("Initial amout = ", amount_left)
+           
+for i in range(years):    
+    annual_depreciation = (deppercent * amount_left) / 100
+    amount_left = amount_left - annual_depreciation
+    print("After " + str(i + 1) + " years, your car is worth " + str(amount_left))
+         
+print("Amount after depreciation = ", amount_left)
